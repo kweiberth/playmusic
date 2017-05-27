@@ -148,7 +148,7 @@ PlayMusic.prototype._oauth =  function (callback) {
         has_permission: 1,
         service: "sj",
         source: "android",
-        androidId: that._androidId,
+        androidId: crypto.pseudoRandomBytes(8).toString("hex"),
         app: "com.google.android.music",
         device_country: "us",
         operatorCountry: "us",
